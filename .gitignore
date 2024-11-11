@@ -1,0 +1,157 @@
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# ملفات بناء وملفات الكائنات
+*.obj
+*.o
+*.lo
+*.la
+*.al
+*.libs
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+# مجلدات بناء شائعة
+/build/
+/bin/
+/Debug/
+Release/
+x64/
+x86/
+
+# ملفات التجميع التلقائي (auto-generated) 
+*.d
+*.dSYM/
+*.orig
+*.rej
+
+# ملفات CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ملفات Visual Studio
+.vscode/
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.ipch/
+*.pdb
+*.idb
+*.opendb
+*.tlog/
+*.lastbuildstate
+
+# ملفات CodeBlocks
+*.layout
+*.depend
+*.cbp
+*.workspace
+
+# ملفات Qt Creator
+*.pro.user
+*.qmake.stash
+*.pro.user.*
+*.qbs.user
+*.qmlc
+*.jsc
+
+# ملفات السجلات والتصحيح
+*.log
+*.tmp
+*.cache
+
+# ملفات أخرى غير مرغوب فيها
+*.swp
+*.bak
+*.tmp
+*.old
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# مجلدات وأدوات البناء
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# ملفات النواتج المؤقتة والمجمّعة
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+*.nupkg
+*.snupkg
+*.log
+*.cache
+*.pdb
+*.mdb
+
+# ملفات وأدوات Visual Studio
+.vscode/
+.vs/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache/
+.vscode/
+*.sln*
+*.csproj.user
+ipch/
+tlog/
+*.lastbuildstate
+
+# مجلدات إعادة البناء
+TestResults/
+ClientBin/
+Backup*/
+sql/
+Dump/
+
+# ملفات NuGet وPackage Management
+*.nuget/
+*.snupkg
+packages/
+# لجعل Visual Studio يحمل الحزم من جديد
+!packages/repositories.config
+
+# ملفات .NET وAzure
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.Azure.*
+*.AzureComputeEmulator/
+aspnet_client/
+ServiceFabricBackup/
+
+# ملفات الفحص وإعداد التكوينات
+*.Coverage
+*.codecoverage
+*.config
+*.dotCover
+*.swo
+*.swn
+
+# ملفات التخزين المؤقت والتحكم في الأداء
+[Content_Types].xml
+*.diff
+*.[Pp]ublish.xml
+backup/
+
+# ملفات أخرى غير مرغوب فيها
+*.tmp
+*.bak
+*.swp
+*.old

@@ -1,0 +1,310 @@
+body {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* heder */
+.headergame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 2px solid #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+}
+
+/* body */
+.bodygame {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+    height: 450px;
+    position: relative;
+}
+
+.bodygame .mangame {
+    width: 50%;
+    position: relative;
+}
+
+/* checked-lettergame */
+.bodygame .mangame .undergame {
+    position: absolute;
+    background-color: #ffffff;
+    width: 20%;
+    height: 5px;
+    left: 16%;
+    top: 87%;
+    z-index: 1;
+    display: none;
+}
+
+.bodygame .mangame .columgame {
+    position: absolute;
+    background-color: rgb(255, 77, 0);
+    width: 5px;
+    height: 77%;
+    left: 25%;
+    display: none;
+    top: 11%;
+}
+
+.bodygame .mangame .leftgame {
+    position: absolute;
+    background-color: #ffffff;
+    width: 24%;
+    height: 5px;
+    left: 25%;
+    display: none;
+    top: 98px;
+}
+
+.bodygame .mangame .leftundergame {
+    position: absolute;
+    background-color: #ffffff;
+    width: 5px;
+    height: 64px;
+    left: 49%;
+    display: none;
+    top: 98px;
+}
+
+.bodygame .mangame .circlegame {
+    position: relative;
+    border: 5px dashed #ff5722;
+    width: 8%;
+    height: 11%;
+    border-radius: 50%;
+    left: 44%;
+    display: none;
+    top: 35%;
+}
+
+.bodygame .mangame .circlegame::after {
+    position: absolute;
+    content: "";
+    border: 5px dashed rgb(255, 255, 255);
+    width: 69%;
+    height: 69%;
+    border-radius: 50%;
+    left: 6%;
+    top: 6%;
+}
+
+/* checked-mangame */
+.bodygame .mangame .man-header {
+    position: absolute;
+    width: 11px;
+    height: 32%;
+    background: rgb(255, 255, 255);
+    left: 48%;
+    display: none;
+    top: 45%;
+}
+
+.bodygame .mangame .man-header::before {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    left: 60%;
+    top: 27%;
+    transform: rotate(-27deg);
+}
+
+.bodygame .mangame .man-header::after {
+    position: absolute;
+    content: "";
+    width: 51px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    right: 50%;
+    top: 27%;
+    transform: rotate(27deg);
+}
+
+.bodygame .mangame .man-legs {
+    position: relative;
+    background: rgb(0, 213, 255);
+    width: 10px;
+    height: 3px;
+    display: none;
+    left: 48%;
+    top: 65%;
+}
+
+.mangame.rong-1 .undergame {
+    display: block;
+}
+
+.mangame.rong-2 .columgame {
+    display: block;
+}
+
+.mangame.rong-3 .leftgame {
+    display: block;
+}
+
+.mangame.rong-4 .leftundergame {
+    display: block;
+}
+
+.mangame.rong-5 .circlegame {
+    display: block;
+}
+
+.mangame.rong-6 .man-header {
+    display: block;
+}
+
+.mangame.rong-7 .man-legs {
+    display: block;
+}
+
+
+/* ----------------lettergame---------------------- */
+.bodygame .lettergame {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    height: 55%;
+    padding: 18px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box .letter-box {
+    width: calc(82% / 7);
+    height: 27px;
+    background: green;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0px;
+}
+
+.box .has-width {
+    pointer-events: none;
+    background-color: #777;
+    user-select: none;
+}
+
+
+.boxwordrandom {
+    margin-left: 10px;
+    color: #FF9800;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+/* -------------------------------------- */
+.letrspanbox {
+    width: 90%;
+    height: 100px;
+    background: rebeccapurple;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.letrspanbox span {
+    width: 46px;
+    height: 40px;
+    display: block;
+    background: rgb(192, 193, 193);
+    border-bottom: 6px solid #333;
+    margin-left: 10px;
+    font-size: 33px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.letrspanbox .has-width {
+    width: 46px;
+    height: 40px;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.letrspanbox .has-width::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -05%);
+    width: 40%;
+    height: 4px;
+    background-color: black;
+}
+
+
+.boxname {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hwb(174.4deg 0% 41.18% / 83%);
+    z-index: 2;
+}
+
+.bacend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hwb(0deg 0% 0% / 58%);
+    cursor: not-allowed;
+    z-index: 2;
+}
+
+.end {
+    background: #F44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 5px;
+    user-select: none;
+    text-align: center;
+}
+
+.finshed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #009888;
+    width: 30%;
+    height: 150px;
+}
