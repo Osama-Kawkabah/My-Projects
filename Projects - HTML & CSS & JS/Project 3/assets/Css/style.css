@@ -1729,7 +1729,7 @@ header ul>li>a:hover::before {
 /* ----------------------------- */
 /* Start discount  */
 #discount {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -1944,12 +1944,13 @@ header ul>li>a:hover::before {
     font-size: 17px;
 }
 
-.footer .copyright {
-    color: white;
-    font-size: 20px;
+ .copyright {
+    color: #ffffff;
+    background: #191919;
+    font-size: 26px;
     text-align: center;
     padding: 10px;
-    border-top: 1px solid #777777;
+    margin: 0;
 }
 
 /* End footer */

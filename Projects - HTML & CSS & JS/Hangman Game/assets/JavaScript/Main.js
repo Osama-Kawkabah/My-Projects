@@ -113,7 +113,7 @@ document.addEventListener("click", e => {
       let cretdiv = document.createElement("div");
       cretdiv.classList.add("end");
       let cretspan = document.createElement("span");
-      let textspan = document.createTextNode(`🫤 لقد خسرت `);
+      let textspan = document.createTextNode(`(: لقد خسرت `);
       cretspan.appendChild(textspan);
       cretdiv.appendChild(cretspan);
       cretdivmain.appendChild(cretdiv);
